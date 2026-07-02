@@ -39,7 +39,7 @@ Grab the newest build from the [**Releases**](https://github.com/it-worx-nl/ctrl
 | File | Use it when |
 |------|-------------|
 | **`Ctrl-V-Terminal-Setup-<version>.exe`** | Normal install (per-machine, into Program Files). Recommended. |
-| **`Ctrl-V-Terminal-<version>.exe`** | Portable — run it without installing. |
+| **`Ctrl-V-Terminal-Portable-<version>.exe`** | Portable — run it without installing. |
 
 > **First-run note:** the installer isn't code-signed yet, so Windows SmartScreen
 > may show a warning. Click **More info → Run anyway**. A code-signed release is
