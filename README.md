@@ -13,6 +13,10 @@ at your cursor so tools like Claude Code can read it instantly.
 
 [**⬇ Download the latest version**](https://github.com/zohlandt/ctrl-v-terminal-releases/releases/latest) &nbsp;·&nbsp; [**Website**](https://ctrl-v-terminal.appgrid.eu)
 
+<br>
+
+<img src="assets/screenshot.png" alt="Ctrl-V Terminal" width="860">
+
 </div>
 
 ---
