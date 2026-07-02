@@ -7,11 +7,11 @@
 Paste an image straight into a remote terminal with `Ctrl+V`, and its path lands
 at your cursor so tools like Claude Code can read it instantly.
 
-[![Latest release](https://img.shields.io/github/v/release/zohlandt/ctrl-v-terminal-releases?label=latest&color=2d6a4f)](https://github.com/zohlandt/ctrl-v-terminal-releases/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/zohlandt/ctrl-v-terminal-releases/total?color=2d6a4f)](https://github.com/zohlandt/ctrl-v-terminal-releases/releases)
+[![Latest release](https://img.shields.io/github/v/release/it-worx-nl/ctrl-v-terminal-releases?label=latest&color=2d6a4f)](https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/it-worx-nl/ctrl-v-terminal-releases/total?color=2d6a4f)](https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases)
 ![Platform](https://img.shields.io/badge/platform-Windows-0078d6)
 
-[**⬇ Download the latest version**](https://github.com/zohlandt/ctrl-v-terminal-releases/releases/latest) &nbsp;·&nbsp; [**Website**](https://ctrl-v-terminal.appgrid.eu)
+[**⬇ Download the latest version**](https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/latest) &nbsp;·&nbsp; [**Website**](https://ctrl-v-terminal.appgrid.eu)
 
 <br>
 
@@ -34,7 +34,7 @@ VNC remote-desktop viewer — all in one tabbed window.
 
 ## Download
 
-Grab the newest build from the [**Releases**](https://github.com/zohlandt/ctrl-v-terminal-releases/releases/latest) page:
+Grab the newest build from the [**Releases**](https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/latest) page:
 
 | File | Use it when |
 |------|-------------|
@@ -90,7 +90,7 @@ restarts) or **defer it until you next close the app**.
 ## Support & links
 
 - 🌐 Website: **https://ctrl-v-terminal.appgrid.eu**
-- 📦 All downloads & release notes: the [Releases](https://github.com/zohlandt/ctrl-v-terminal-releases/releases) page here.
+- 📦 All downloads & release notes: the [Releases](https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases) page here.
 
 ---
 
