@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ctrl-v-terminal</id>
+    <version>1.2.0</version>
+    <packageSourceUrl>https://github.com/it-worx-nl/ctrl-v-terminal-releases/tree/main/chocolatey</packageSourceUrl>
+    <owners>itworx</owners>
+
+    <title>Ctrl-V Terminal</title>
+    <authors>IT WORX</authors>
+    <projectUrl>https://ctrl-v-terminal.appgrid.eu</projectUrl>
+    <iconUrl>https://ctrl-v-terminal.appgrid.eu/assets/logo.png</iconUrl>
+    <copyright>Copyright (c) 2026 IT WORX</copyright>
+    <licenseUrl>https://ctrl-v-terminal.appgrid.eu/terms/</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://ctrl-v-terminal.appgrid.eu</docsUrl>
+    <bugTrackerUrl>https://github.com/it-worx-nl/ctrl-v-terminal-releases/discussions</bugTrackerUrl>
+    <tags>ssh sftp scp vnc terminal remote-access sysadmin admin windows gui</tags>
+    <summary>Tabbed SSH, SFTP and VNC client for Windows - paste images straight into your terminal session.</summary>
+    <description><![CDATA[
+**Ctrl-V Terminal** is a tabbed SSH / SFTP / VNC client for Windows, built as a modern,
+free alternative to MobaXterm and PuTTY.
+
+### Features
+
+* **Paste images straight into an SSH session** - `Ctrl+V` uploads the clipboard image over SCP and drops the path in your shell. No other client does this.
+* Tabbed sessions with colours, renaming and session restore after a restart.
+* Built-in **SFTP file browser** next to every terminal.
+* **VNC** sessions in the same tab bar as your SSH sessions.
+* **tmux persistence** - reconnect to a session that survived the disconnect.
+* Split panes, search, true colour, ligatures and configurable colour schemes.
+* Multi-language UI (10 languages) and multi-language installer.
+
+### Licensing
+
+Ctrl-V Terminal is commercial software with a free tier. The free tier is **not** a time limited
+trial: it does not expire and requires no key, but is limited to 3 saved sessions. Removing that
+limit requires an activation key, bought once (perpetual licence, no subscription) at
+<https://ctrl-v-terminal.appgrid.eu>. Keys are entered in the app under Help > Upgrade to Pro.
+
+This package is created and maintained by the software vendor (IT WORX). The installer is
+downloaded from the vendor's own GitHub releases repository over HTTPS and verified with a
+SHA256 checksum.
+
+### Installation notes
+
+* Installs per-machine into `%ProgramFiles%\Ctrl-V Terminal` and needs an elevated shell.
+* To install elsewhere, pass the NSIS target directory:
+  `choco install ctrl-v-terminal --install-arguments="'/D=C:\Tools\Ctrl-V Terminal'"`
+* The app checks for new versions on its own and offers them, but never downloads or installs
+  without asking. To let Chocolatey manage versions, decline the in-app prompt and run
+  `choco upgrade ctrl-v-terminal`.
+]]></description>
+    <releaseNotes>https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/tag/v1.2.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
