@@ -1,0 +1,40 @@
+# Belongs in the PUBLIC releases repo as .github/workflows/chocolatey.yml,
+# with this folder checked in as chocolatey/.
+#
+# Needs one repository secret: CHOCO_API_KEY (community.chocolatey.org > Account > API key).
+# Windows runners on a public repo are free, and they ship with Chocolatey CLI
+# preinstalled and run elevated, which is exactly what the test install needs.
+
+name: chocolatey
+
+on:
+  workflow_dispatch:
+    inputs:
+      push:
+        description: 'Push to the Chocolatey Community Repository after a successful test install'
+        type: boolean
+        default: false
+
+jobs:
+  package:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pack and test install
+        shell: powershell
+        run: .\chocolatey\publish.ps1
+
+      - name: Upload nupkg
+        uses: actions/upload-artifact@v4
+        with:
+          name: ctrl-v-terminal-nupkg
+          path: chocolatey/*.nupkg
+          if-no-files-found: error
+
+      - name: Push to the community repository
+        if: ${{ inputs.push }}
+        shell: powershell
+        env:
+          CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+        run: .\chocolatey\publish.ps1 -SkipTest -Push
