@@ -37,7 +37,9 @@ if ($key.Count -eq 1) {
       validExitCodes = @(0)
       file           = $file
     }
-    Uninstall-ChocolateyPackage @packageArgs
+    # Discard the return value: it is the uninstaller's exit code, and letting it
+    # fall through to the output stream prints a bare "0" in the user's log.
+    $null = Uninstall-ChocolateyPackage @packageArgs
   }
 } elseif ($key.Count -eq 0) {
   Write-Warning "$packageName has already been uninstalled by other means."
