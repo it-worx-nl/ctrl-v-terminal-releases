@@ -9,7 +9,7 @@
     <title>Ctrl-V Terminal</title>
     <authors>IT WORX</authors>
     <projectUrl>https://ctrl-v-terminal.appgrid.eu</projectUrl>
-    <iconUrl>https://ctrl-v-terminal.appgrid.eu/assets/logo.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/it-worx-nl/ctrl-v-terminal-releases@2ba175c/chocolatey/icon.png</iconUrl>
     <copyright>Copyright (c) 2026 IT WORX</copyright>
     <licenseUrl>https://ctrl-v-terminal.appgrid.eu/terms/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

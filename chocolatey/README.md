@@ -98,10 +98,10 @@ Things that commonly hold a submission up here:
 * Package id `ctrl-v-terminal` is free on the community repository (`/packages/ctrl-v-terminal`
   returns 404) and follows the naming guideline: lowercase, spaces replaced by hyphens, no dots.
 * `<title>Ctrl-V Terminal</title>` matches the official spelling of the application.
-* Icon guideline: `iconUrl` is the 256x256 app icon (PNG, transparent) served from our own site,
-  which we control. The docs prefer a static CDN pinned to a tag or commit; once this folder plus
-  the icon live in the public releases repo, switch to
-  `https://cdn.jsdelivr.net/gh/it-worx-nl/ctrl-v-terminal-releases@<commit>/chocolatey/icon.png`.
+* Icon guideline: `iconUrl` is the 256x256 app icon (PNG, transparent), served by jsDelivr from
+  `chocolatey/icon.png` in the public releases repo and pinned to a commit sha, which is what the
+  docs ask for (a static CDN, pinned, not a raw GitHub link and not a branch URL). Replacing the
+  icon means committing the new file and pinning the new sha.
 * Version follows the app version exactly. Only if a *package* fix is needed for an already
   approved version do you add a fourth segment, e.g. `1.2.0.20260827`.
 * The project also ships a portable exe, and the docs suggest a product with both an installer and
