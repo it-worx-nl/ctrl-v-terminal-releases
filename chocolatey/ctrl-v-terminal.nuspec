@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ctrl-v-terminal</id>
-    <version>1.2.1</version>
+    <version>1.2.3</version>
     <packageSourceUrl>https://github.com/it-worx-nl/ctrl-v-terminal-releases/tree/main/chocolatey</packageSourceUrl>
     <owners>itworx</owners>
 
@@ -51,7 +51,7 @@ SHA256 checksum.
   without asking. To let Chocolatey manage versions, decline the in-app prompt and run
   `choco upgrade ctrl-v-terminal`.
 ]]></description>
-    <releaseNotes>https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/tag/v1.2.1</releaseNotes>
+    <releaseNotes>https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/tag/v1.2.3</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
