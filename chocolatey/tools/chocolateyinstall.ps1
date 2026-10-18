@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'ctrl-v-terminal'
-$url64       = 'https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/download/v1.2.10/Ctrl-V-Terminal-Setup-1.2.10.exe'
-$checksum64  = 'e101f3100d5b0e10842b090bf61684be510a047ed6280f4fda2a449e84bc15f1'
+$url64       = 'https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/download/v1.2.11/Ctrl-V-Terminal-Setup-1.2.11.exe'
+$checksum64  = '5602f30743d58afa6140df2e82efd82f25d85b2276a70e66352f490800256d88'
 
 $packageArgs = @{
   packageName    = $packageName
