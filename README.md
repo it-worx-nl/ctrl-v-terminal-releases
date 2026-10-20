@@ -99,6 +99,6 @@ restarts) or **defer it until you next close the app**.
 *This repository hosts the official downloads and release notes only.
 The application source is private.*
 
-© IT WORX
+© IT-WORX
 
 </div>
