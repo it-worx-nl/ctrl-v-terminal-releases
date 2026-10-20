@@ -2,15 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ctrl-v-terminal</id>
-    <version>1.2.15</version>
+    <version>1.2.16</version>
     <packageSourceUrl>https://github.com/it-worx-nl/ctrl-v-terminal-releases/tree/main/chocolatey</packageSourceUrl>
     <owners>itworx</owners>
 
     <title>Ctrl-V Terminal</title>
-    <authors>IT WORX</authors>
+    <authors>IT-WORX</authors>
     <projectUrl>https://ctrl-v-terminal.appgrid.eu</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/it-worx-nl/ctrl-v-terminal-releases@2ba175c/chocolatey/icon.png</iconUrl>
-    <copyright>Copyright (c) 2026 IT WORX</copyright>
+    <copyright>Copyright (c) 2026 IT-WORX</copyright>
     <licenseUrl>https://ctrl-v-terminal.appgrid.eu/terms/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://ctrl-v-terminal.appgrid.eu</docsUrl>
@@ -38,7 +38,7 @@ trial: it does not expire and requires no key, but is limited to 3 saved session
 limit requires an activation key, bought once (perpetual licence, no subscription) at
 <https://ctrl-v-terminal.appgrid.eu>. Keys are entered in the app under Help > Upgrade to Pro.
 
-This package is created and maintained by the software vendor (IT WORX). The installer is
+This package is created and maintained by the software vendor (IT-WORX). The installer is
 downloaded from the vendor's own GitHub releases repository over HTTPS and verified with a
 SHA256 checksum.
 
@@ -51,7 +51,7 @@ SHA256 checksum.
   without asking. To let Chocolatey manage versions, decline the in-app prompt and run
   `choco upgrade ctrl-v-terminal`.
 ]]></description>
-    <releaseNotes>https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/tag/v1.2.15</releaseNotes>
+    <releaseNotes>https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/tag/v1.2.16</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
