@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ctrl-v-terminal</id>
-    <version>1.2.16</version>
+    <version>1.2.17</version>
     <packageSourceUrl>https://github.com/it-worx-nl/ctrl-v-terminal-releases/tree/main/chocolatey</packageSourceUrl>
     <owners>itworx</owners>
 
@@ -29,7 +29,7 @@ free alternative to MobaXterm and PuTTY.
 * **VNC** sessions in the same tab bar as your SSH sessions.
 * **tmux persistence** - reconnect to a session that survived the disconnect.
 * Split panes, search, true colour, ligatures and configurable colour schemes.
-* Multi-language UI (10 languages) and multi-language installer.
+* Multi-language UI (21 languages) and multi-language installer.
 
 ### Licensing
 
@@ -51,7 +51,7 @@ SHA256 checksum.
   without asking. To let Chocolatey manage versions, decline the in-app prompt and run
   `choco upgrade ctrl-v-terminal`.
 ]]></description>
-    <releaseNotes>https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/tag/v1.2.16</releaseNotes>
+    <releaseNotes>https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/tag/v1.2.17</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
