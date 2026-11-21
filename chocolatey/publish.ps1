@@ -66,7 +66,10 @@ Chocolatey CLI not found. Install it in an elevated PowerShell with:
     Write-Host "Package : $id $version"     -ForegroundColor Cyan
     Write-Host "Installer: $url"            -ForegroundColor Cyan
 
-    if ($version -notmatch '\d+\.\d+\.\d+' -or $url -notmatch [regex]::Escape($version)) {
+    # A package fix gets Chocolatey's usual fourth part (1.2.37.20261121): the
+    # installer is still that of 1.2.37, so compare only the first three parts.
+    $appVersion = if ($version -match '^(\d+\.\d+\.\d+)') { $Matches[1] } else { '' }
+    if (-not $appVersion -or $url -notmatch [regex]::Escape($appVersion)) {
         throw "The nuspec version ($version) does not appear in the installer URL. Run 'npm run choco:sync' first."
     }
 
