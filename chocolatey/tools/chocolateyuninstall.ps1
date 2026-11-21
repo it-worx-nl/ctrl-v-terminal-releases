@@ -1,15 +1,18 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName  = 'ctrl-v-terminal'
-$softwareName = 'Ctrl-V Terminal*'
+$softwareName = 'CtrlVTerm*'
 
-[array]$key = Get-UninstallRegistryKey -SoftwareName $softwareName
+# Until 1.2.37 the app was called "Ctrl-V Terminal", and an install that was
+# never upgraded still registers under that name. Look for both.
+[array]$key = @(Get-UninstallRegistryKey -SoftwareName $softwareName) +
+              @(Get-UninstallRegistryKey -SoftwareName 'Ctrl-V Terminal*')
 
 if ($key.Count -eq 1) {
   $key | ForEach-Object {
     # electron-builder registers the uninstaller as
-    #   UninstallString      "<dir>\Uninstall Ctrl-V Terminal.exe" /allusers
-    #   QuietUninstallString "<dir>\Uninstall Ctrl-V Terminal.exe" /allusers /S
+    #   UninstallString      "<dir>\Uninstall CtrlVTerm.exe" /allusers
+    #   QuietUninstallString "<dir>\Uninstall CtrlVTerm.exe" /allusers /S
     # so the path has to be split off from its arguments; passing the whole
     # string as the file makes Windows look for a file with the arguments in
     # its name.
