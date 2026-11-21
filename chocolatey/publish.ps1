@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-    Packs, test-installs and optionally pushes the Ctrl-V Terminal Chocolatey package.
+    Packs, test-installs and optionally pushes the CtrlVTerm Chocolatey package.
 
 .DESCRIPTION
     Runs on Windows with the Chocolatey CLI available. Version, id and download URL
@@ -89,7 +89,9 @@ Chocolatey CLI not found. Install it in an elevated PowerShell with:
         choco install $id --source "$here" --yes --no-progress --debug
         Assert-LastExitCode 'choco install'
 
-        $exe = Join-Path $env:ProgramFiles 'Ctrl-V Terminal\Ctrl-V Terminal.exe'
+        # A fresh install lands in the folder named after the product (CtrlVTerm since
+        # 1.2.37); the runner never has an older install to upgrade from.
+        $exe = Join-Path $env:ProgramFiles 'CtrlVTerm\CtrlVTerm.exe'
         if (-not (Test-Path $exe)) { throw "Install reported success but $exe is missing" }
         Write-Host "Found $exe" -ForegroundColor Green
 
