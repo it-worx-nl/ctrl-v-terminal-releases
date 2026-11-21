@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ctrl-v-terminal</id>
-    <version>1.2.36</version>
+    <version>1.2.37</version>
     <packageSourceUrl>https://github.com/it-worx-nl/ctrl-v-terminal-releases/tree/main/chocolatey</packageSourceUrl>
     <owners>itworx</owners>
 
-    <title>Ctrl-V Terminal</title>
+    <title>CtrlVTerm</title>
     <authors>IT-WORX</authors>
     <projectUrl>https://ctrl-v-terminal.appgrid.eu</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/it-worx-nl/ctrl-v-terminal-releases@2ba175c/chocolatey/icon.png</iconUrl>
@@ -18,7 +18,7 @@
     <tags>ssh sftp scp vnc terminal remote-access sysadmin admin windows gui freemium commercial</tags>
     <summary>Tabbed SSH, SFTP and VNC client for Windows - paste images straight into your terminal session.</summary>
     <description><![CDATA[
-**Ctrl-V Terminal** is a tabbed SSH / SFTP / VNC client for Windows, built as a modern,
+**CtrlVTerm** is a tabbed SSH / SFTP / VNC client for Windows, built as a modern,
 free alternative to MobaXterm and PuTTY.
 
 ### Features
@@ -33,7 +33,7 @@ free alternative to MobaXterm and PuTTY.
 
 ### Licensing
 
-Ctrl-V Terminal is commercial software with a free tier. The free tier is **not** a time limited
+CtrlVTerm is commercial software with a free tier. The free tier is **not** a time limited
 trial: it does not expire and requires no key, but is limited to 3 saved sessions. Removing that
 limit requires an activation key, bought once (perpetual licence, no subscription) at
 <https://ctrl-v-terminal.appgrid.eu>. Keys are entered in the app under Help > Upgrade to Pro.
@@ -44,14 +44,14 @@ SHA256 checksum.
 
 ### Installation notes
 
-* Installs per-machine into `%ProgramFiles%\Ctrl-V Terminal` and needs an elevated shell.
+* Installs per-machine into `%ProgramFiles%\CtrlVTerm` (an upgrade stays in the folder it was installed in) and needs an elevated shell.
 * To install elsewhere, pass the NSIS target directory:
-  `choco install ctrl-v-terminal --install-arguments="'/D=C:\Tools\Ctrl-V Terminal'"`
+  `choco install ctrl-v-terminal --install-arguments="'/D=C:\Tools\CtrlVTerm'"`
 * The app checks for new versions on its own and offers them, but never downloads or installs
   without asking. To let Chocolatey manage versions, decline the in-app prompt and run
   `choco upgrade ctrl-v-terminal`.
 ]]></description>
-    <releaseNotes>https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/tag/v1.2.36</releaseNotes>
+    <releaseNotes>https://github.com/it-worx-nl/ctrl-v-terminal-releases/releases/tag/v1.2.37</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
