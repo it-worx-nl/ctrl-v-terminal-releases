@@ -5,8 +5,11 @@ $softwareName = 'CtrlVTerm*'
 
 # Until 1.2.37 the app was called "Ctrl-V Terminal", and an install that was
 # never upgraded still registers under that name. Look for both.
+# A search that finds nothing yields $null, and @($null) is an array with one
+# (empty) element, so filter those out or one install counts as two matches.
 [array]$key = @(Get-UninstallRegistryKey -SoftwareName $softwareName) +
-              @(Get-UninstallRegistryKey -SoftwareName 'Ctrl-V Terminal*')
+              @(Get-UninstallRegistryKey -SoftwareName 'Ctrl-V Terminal*') |
+              Where-Object { $_ }
 
 if ($key.Count -eq 1) {
   $key | ForEach-Object {
